@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.jasmin.myrandgame.MainActivity">
+
+    <TextView
+        android:text="High score:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/txtHighScore"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnreset"
+        android:layout_below="@+id/btnplay"
+        android:layout_alignLeft="@+id/btnplay"
+        android:layout_alignStart="@+id/btnplay"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:text="play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:id="@+id/btnplay"
+        android:layout_below="@+id/txtScore"
+        android:layout_toRightOf="@+id/txtHighScore"
+        android:layout_toEndOf="@+id/txtHighScore" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtScore"
+        android:textSize="100sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/txtHighScore"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
